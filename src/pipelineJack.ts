@@ -304,6 +304,7 @@ export class PipelineJack extends JackBase {
         }
 
         root.definition[0].script = source;
+        root.definition[0].sandbox = true;
         root.quietPeriod = 0;
         xml = new xml2js.Builder().buildObject(parsed);
 
